@@ -1,0 +1,35 @@
+{
+  "navigation": {
+    "home": "Home",
+    "podcast": "Podcast",
+    "resources": "Recursos",
+    "analysis": "Análisis",
+    "contact": "Contacto"
+  },
+  "intro": {
+    "description": "Abogado guatemalteco con experiencia en análisis estratégico, análisis político y asesorías a directivas. Actualmente soy Presidente Ejecutivo del Movimiento Cívico Nacional. Participé en el cohorte 2022-2023 del Millenium Leadership Program del Atlantic Council. En este website comparto reflexiones y recursos para comprender el entorno sociopolítico en el que vivimos."
+  },
+  "podcast": {
+    "title": "Podcast",
+    "description": "Educamos sobre el impacto que la política, relaciones sociales y economía tiene en la sociedad. Motivamos a ejercer la soberanía individual para lograr impactos positivos en la sociedad. Ser cada vez más conscientes del potencial impacto de nuestras acciones."
+  },
+  "resources": {
+    "title": "Recursos",
+    "categories": {
+      "all": "Todo",
+      "press": "Prensa",
+      "news": "Noticias",
+      "articles": "Artículos"
+    }
+  },
+  "analysis": {
+    "title": "Análisis"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "Contacto",
+    "collaborate": "Quiero colaborar",
+    "motto": "La república sigue viva",
+    "address": "Address"
+  }
+}
