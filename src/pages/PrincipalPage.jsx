@@ -43,9 +43,9 @@ const PrincipalPage = () => {
                     </div>
                     <img src="/images/podcast.svg" alt="Logo" className="w-1/2 md:w-1/2 h-auto md:h-full p-4 object-cover rounded-6xl"/>
                 </div>
-                <div className="max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden">
-                    <Title text={t('contact.media')} color="text-je-white" textAlign="text-left" />
-                    <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
+                <div className="max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-start">
+                    <Title text={t('contact.media')} color="text-je-white" textAlign="text-center" />
+                    <div className="justify-evenly items-evenly flex flex-row lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
                         <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
                             <BsInstagram className="h-6 w-6" aria-hidden="true" />
                         </a>
