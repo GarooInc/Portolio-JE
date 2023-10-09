@@ -12,7 +12,7 @@ const PrincipalPage = () => {
             <NavBar/>
             <section id='/' className="bg-je-blue w-full h-screen pt-12 md:pt-20 rounded-b-6xl flex items-center justify-center">
                 <div className="w-full max-w-screen-xl mx-4 md:mx-auto flex flex-col md:flex-row gap-4 md:gap-8 rounded-6xl p-4 md:p-8">
-                    <img src="/images/profilepic.jpg" alt="Logo" className="w-full md:w-1/2 h-full md:h-auto object-cover rounded-6xl"/>
+                    <img src="/images/profilepic.jpg" alt="Logo" className="mt-4 w-full md:w-1/2 h-full md:h-auto object-cover rounded-6xl"/>
                     <div className="flex flex-col justify-center w-full md:w-1/2">
                         <Title text="JOSE ECHEVERRÍA" color="text-white" textAlign="text-right" />
                         <span className="text-l md:text-2xl text-white text-right" style={{ fontFamily: 'Syne' }}>{t('intro.description')}</span>
