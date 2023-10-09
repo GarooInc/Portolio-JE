@@ -22,7 +22,7 @@ const PrincipalPage = () => {
             <section id='/podcast' className="bg-je-blue w-full h-screen pt-12 md:pt-20 rounded-6xl flex flex-col justify-start items-center">
                 <div className="bg-je-white max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-center items-center">
                     <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
-                        <h1 className="text-l md:text-2xl text-je-black text-left" style={{ fontFamily: 'Syne' }}>{t('podcast.title')}</h1>
+                        <h1 className="text-4xl md:text-2xl text-je-black text-left" style={{ fontFamily: 'Syne' }}>{t('podcast.title')}</h1>
                         <span className="text-l md:text-2xl text-je-black mb-4 font-extrabold text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('podcast.description')}</span>
                     </div>
                     <img src="/images/podcast.svg" alt="Logo" className="w-1/2 md:w-1/2 h-auto md:h-full p-4 object-cover rounded-6xl"/>
