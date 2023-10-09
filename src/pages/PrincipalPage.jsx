@@ -35,7 +35,7 @@ const PrincipalPage = () => {
                 <Title text={t('analysis.title')} color="text-white" textAlign="text-center" />
             </section>
             <section id='/contacto' className="bg-je-red w-full h-screen bg-je-blue w-full h-screen pt-20 ">
-                <div className="bg-je-white max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-center items-center">
+                <div className="h-3/4 bg-je-white mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-around items-center">
                     <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
                         <span className="text-l md:text-2xl text-je-black text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('contact.subtitle')}</span>
                         <Title text={t('contact.title')} color="text-je-black" textAlign="text-left" />
@@ -43,7 +43,7 @@ const PrincipalPage = () => {
                     </div>
                     <img src="/images/podcast.svg" alt="Logo" className="w-1/2 md:w-1/2 h-auto md:h-full p-4 object-cover rounded-6xl"/>
                 </div>
-                <div className="max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-start">
+                <div className="mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-center">
                     <Title text={t('contact.media')} color="text-je-white" textAlign="text-center" />
                     <div className="justify-evenly items-evenly flex flex-row lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
                         <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
