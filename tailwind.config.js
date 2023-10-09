@@ -14,6 +14,7 @@ export default {
         'je-gray': '#E3E3E3',
         'je-red': '#BF4D38',
         'je-black': '#333333',
+        'je-white': '#F7F7F7',
       },
     },
   },

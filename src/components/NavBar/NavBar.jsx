@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-scroll"
 import "/i18n"
 import { useTranslation } from 'react-i18next'
-import {BsFacebook, BsInstagram, BsTwitter, BsYoutube, BsTiktok, BsLinkedin} from 'react-icons/bs'
+import {BsInstagram, BsTwitter, BsYoutube, BsTiktok, BsLinkedin,BsSpotify} from 'react-icons/bs'
 
 
 
@@ -44,26 +44,25 @@ const NavBar = () => {
               </Link>
             ))}
           </div>
-
           <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
-            <a href="https://www.facebook.com/juanesteban.lopez.754" target="_blank" rel="noreferrer" className="text-white">
-              <BsFacebook className="h-6 w-6" aria-hidden="true" />
-            </a>
-            <a href="https://www.instagram.com/juanestebanlopez/" target="_blank" rel="noreferrer" className="text-white">
-              <BsInstagram className="h-6 w-6" aria-hidden="true" />
-            </a>
-            <a href="https://twitter.com/JuanEstebanLop" target="_blank" rel="noreferrer" className="text-white">
-              <BsTwitter className="h-6 w-6" aria-hidden="true" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCQ8Z6Z6Zy5q8Z9Z9Z9Z9Z9Q" target="_blank" rel="noreferrer" className="text-white">
-              <BsYoutube className="h-6 w-6" aria-hidden="true" />
-            </a>
-            <a href="https://www.tiktok.com/@juanestebanlopez" target="_blank" rel="noreferrer" className="text-white">
-              <BsTiktok className="h-6 w-6" aria-hidden="true" />
-            </a>
-            <a href="https://www.linkedin.com/in/juanestebanlopez/" target="_blank" rel="noreferrer" className="text-white">
-              <BsLinkedin className="h-6 w-6" aria-hidden="true" />
-            </a>
+              <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
+                  <BsInstagram className="h-6 w-6" aria-hidden="true" />
+              </a>
+              <a href="https://www.linkedin.com/in/jose-echeverria-0171b65a/" target="_blank" rel="noreferrer" className="text-white">
+                  <BsLinkedin className="h-6 w-6" aria-hidden="true" />
+              </a>
+              <a href="https://twitter.com/joseecheve" target="_blank" rel="noreferrer" className="text-white">
+                  <BsTwitter className="h-6 w-6" aria-hidden="true" />
+              </a>
+              <a href="https://www.tiktok.com/@jose.echeve" target="_blank" rel="noreferrer" className="text-white">
+                  <BsTiktok className="h-6 w-6" aria-hidden="true" />
+              </a>
+              <a href="https://www.youtube.com/@CivitasPodcast" target="_blank" rel="noreferrer" className="text-white">
+                  <BsYoutube className="h-6 w-6" aria-hidden="true" />
+              </a>
+              <a href="https://open.spotify.com/show/7Mry4XjWu3FjemmeYS2TlL?si=2ebd6daf370149df" target="_blank" rel="noreferrer" className="text-white">
+                  <BsSpotify className="h-6 w-6" aria-hidden="true" />
+              </a>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

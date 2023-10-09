@@ -3,3 +3,9 @@
     src: url('./Syne.ttf') format('truetype');
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('SpaceGrotesk.ttf') format('truetype');
+    font-style: normal;
+}
