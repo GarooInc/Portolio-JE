@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Title = ({ text, color = 'text-white', textAlign = 'text-right' }) => {
     return (
-        <h1 className={`font-extrabold text-4xl md:text-5xl ${color} uppercase my-6 ${textAlign}`} style={{ fontFamily: 'Space Grotesk' }}>
+        <h1 className={`font-bold text-4xl md:text-5xl ${color} uppercase my-6 ${textAlign}`} style={{ fontFamily: 'Space Grotesk' }}>
             {text}
         </h1>
     )
