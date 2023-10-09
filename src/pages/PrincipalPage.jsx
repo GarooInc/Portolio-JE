@@ -15,7 +15,7 @@ const PrincipalPage = () => {
                     <img src="/images/profilepic.jpg" alt="Logo" className="mt-8 w-full md:w-1/2 h-full md:h-auto object-cover rounded-6xl"/>
                     <div className="flex flex-col justify-center w-full md:w-1/2">
                         <Title text="JOSE ECHEVERRÍA" color="text-white" textAlign="text-right" />
-                        <span className="text-l md:text-2xl text-white text-right" style={{ fontFamily: 'Syne' }}>{t('intro.description')}</span>
+                        <span className="pb-4 text-l md:text-2xl text-white text-right" style={{ fontFamily: 'Syne' }}>{t('intro.description')}</span>
                     </div>
                 </div>
             </section>
