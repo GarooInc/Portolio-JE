@@ -1,6 +1,6 @@
 import "./App.css"
 import PrincipalPage from "./pages/PrincipalPage"
-//import "./assets/fonts/fonts.css"
+import "./assets/fonts/fonts.css"
 
 function App() {
 
