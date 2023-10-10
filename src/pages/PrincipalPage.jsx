@@ -10,6 +10,7 @@ import CategoryList from "../components/CategoryList/CategoryList"
 import resources from "../../resources"
 import PostList from '../components/PostList/PostList';
 import Form from '../components/Form/Form';
+import Footer from '../components/Footer/Footer';
 
 
 const PrincipalPage = () => {
@@ -87,7 +88,7 @@ const PrincipalPage = () => {
                         <Form/>
                     </div>
                 </div>
-                <div className="mx-4 md:mx-4 flex flex-col md:flex-row gap-2 md:gap-6 rounded-6xl p-2 md:p-8 overflow-hidden justify-center">
+                <div className="p-8 md:mx-4 flex flex-col md:flex-row gap-2 md:gap-6 rounded-6xl  overflow-hidden justify-center">
                     <Title text={t('contact.media')} color="text-je-white" textAlign="text-center" />
                     <div className="justify-evenly items-evenly flex flex-row lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
                         <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
@@ -111,7 +112,8 @@ const PrincipalPage = () => {
                     </div>
                 </div>
             </section>
-            <section id='footer' className="flex-shrink-0 bg-je-black h-[448px]">
+            <section id='footer' className="flex-shrink-0 bg-je-black h-100">
+                <Footer/>
             </section>
             <div className="flex flex-col bottom-4 right-4 fixed">
                     <button className="py-1 px-2 md:py-2 md:px-4 rounded" onClick={() => i18n.changeLanguage('en')}>
