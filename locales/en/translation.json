@@ -15,12 +15,12 @@
   },
   "resources": {
     "title": "Resources",
-    "categories": {
-      "all": "All",
-      "press": "Press",
-      "news": "News",
-      "articles": "Articles"
-    }
+    "categories": [
+      "All",
+      "Press",
+      "News",
+      "Articles"
+    ]
   },
   "analysis": {
     "title": "Analysis"

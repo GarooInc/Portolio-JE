@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import NavBar from "../components/NavBar/NavBar"
 import i18n from "../../i18n"
 import { useTranslation } from 'react-i18next'
@@ -5,10 +6,26 @@ import Title from "../components/Title"
 import {BsInstagram, BsTwitter, BsYoutube, BsTiktok, BsLinkedin,BsSpotify} from 'react-icons/bs'
 import Slider from "../components/Slider/Slider"
 import podcasts from "../../podcasts"
+import CategoryList from "../components/CategoryList/CategoryList"
+import resources from "../../resources"
+import PostList from '../components/PostList/PostList';
+import Form from '../components/Form/Form';
 
 
 const PrincipalPage = () => {
     const { t } = useTranslation()
+    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todo');  // 'Todo' es la categoría predeterminada
+    
+    const onCategorySelect = (categoria) => {
+        setCategoriaSeleccionada(categoria);
+        console.log(categoria);
+    };
+
+    // Definir postsFiltrados basado en la categoría seleccionada
+    const postsFiltrados = resources[categoriaSeleccionada].posts;
+    const primerosTresPosts = postsFiltrados.slice(0, 3);
+    const siguientesTresPosts = postsFiltrados.slice(3, 6);
+
     return (
         <div className='principalPage'>
             <NavBar/>
@@ -25,28 +42,52 @@ const PrincipalPage = () => {
                 <div className="md:h-1/2 bg-je-white max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-center items-center">
                     <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
                         <h1 className="text-4xl md:text-2xl text-je-black text-left my-4" style={{ fontFamily: 'Syne' }}>{t('podcast.title')}</h1>
-                        <span className="text-l md:text-2xl text-je-black mb-4 font-extrabold text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('podcast.description')}</span>
+                        <span className="text-l md:text-2xl text-je-black mb-4 font-bold text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('podcast.description')}</span>
                     </div>
                     <img src="/images/podcast.svg" alt="Logo" className="w-1/2 md:w-1/2 h-auto md:h-full p-4 object-contain rounded-6xl"/>
                 </div>
                 <Slider podcasts={podcasts}/>
             </section>
-            <section id='/recursos' className="w-full h-screen">
+            <section id='/recursos' className="w-full">
                 <Title text={t('resources.title')} color="text-je-black" textAlign="text-center" />
+                <div className="flex md:flex-row gap-6 md:gap-8 rounded-t-6xl p-2 md:p-8 overflow-hidden justify-around items-center bg-je-gray m-4">
+                    <CategoryList 
+                        categories={t('resources.categories', { returnObjects: true })}
+                        onCategorySelect={onCategorySelect}
+                    />
+                </div>
+                <div className="flex md:flex-row gap-6 md:gap-8 rounded-b-6xl p-2 overflow-hidden justify-center md:justify-start items-start mx-4">
+                        <ul>
+                            {primerosTresPosts.map((post, index) => (
+                                <li key={index} className="flex flex-col m-4">
+                                    <PostList post={post}/>
+                                </li>
+                            ))}
+                        </ul>
+                        <ul>
+                            {siguientesTresPosts.map((post, index) => (
+                                <li key={index} className="flex flex-col m-4">
+                                    <PostList post={post}/>
+                                </li>
+                            ))}
+                        </ul>
+                </div>
             </section>
             <section id='/analisis' className="bg-je-red w-full h-screen bg-je-blue w-full h-screen pt-20 rounded-t-6xl">
                 <Title text={t('analysis.title')} color="text-white" textAlign="text-center" />
             </section>
-            <section id='/contacto' className="bg-je-red w-full h-screen bg-je-blue w-full h-screen pt-20 ">
+            <section id='/contacto' className="bg-je-red w-full  bg-je-blue w-full pt-20 ">
                 <div className="h-3/4 bg-je-white mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-around items-center">
                     <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
                         <span className="text-l md:text-2xl text-je-black text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('contact.subtitle')}</span>
                         <Title text={t('contact.title')} color="text-je-black" textAlign="text-left" />
                         <span className="text-l md:text-2xl text-je-black text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('contact.collaborate')}</span>
                     </div>
-                    <img src="/images/podcast.svg" alt="Logo" className="w-1/2 md:w-1/2 h-auto md:h-full p-4 object-cover rounded-6xl"/>
+                    <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
+                        <Form/>
+                    </div>
                 </div>
-                <div className="mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-center">
+                <div className="mx-4 md:mx-4 flex flex-col md:flex-row gap-2 md:gap-6 rounded-6xl p-2 md:p-8 overflow-hidden justify-center">
                     <Title text={t('contact.media')} color="text-je-white" textAlign="text-center" />
                     <div className="justify-evenly items-evenly flex flex-row lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
                         <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
