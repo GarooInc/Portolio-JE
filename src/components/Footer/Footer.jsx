@@ -16,7 +16,7 @@ const Footer = () => {
 
     return (
         <div className="bg-je-black w-full pt-12 md:pt-8 md:px-4 flex-col md:flex-row flex items-start md:justify-start">
-            <div className="w-full max-w-screen-xl mx-4 flex flex-col md:gap-8 p-2 md:p-4">
+            <div className="md:w-full max-w-screen-xl mx-4 flex flex-col md:gap-8 p-2 md:p-4">
                 <div className="flex flex-col md:flex-row justify-start w-full gap-16">
                     <div className="flex flex-col justify-center w-full md:w-1/2">
                     <a href="#" className="-m-1.5 p-0 text-white font-bold text-[40px] leading-[48px] " style={{ fontFamily: 'Space Grotesk' }}>
