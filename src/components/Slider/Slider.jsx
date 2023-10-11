@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import PodcastPreview from '../PodcastPreview/PodcastPreview';
 import PropTypes from "prop-types";
+import AnalysisPreview from '../AnalysisPreview/AnalysisPreview';
 
-const Slider = ({ podcasts }) => {
+const Slider = ({ items, isAnalysis }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(4);
+
+  console.log(items);
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,7 +19,7 @@ const Slider = ({ podcasts }) => {
     };
     
     window.addEventListener('resize', handleResize);
-    handleResize();  
+    handleResize();
     
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -24,7 +27,7 @@ const Slider = ({ podcasts }) => {
   }, []);
 
   const handleNext = () => {
-    setStartIndex(prevIndex => Math.min(prevIndex + itemsToShow, podcasts.length - itemsToShow));
+    setStartIndex(prevIndex => Math.min(prevIndex + itemsToShow, items.length - itemsToShow));
   };
 
   const handlePrev = () => {
@@ -36,24 +39,35 @@ const Slider = ({ podcasts }) => {
       <button 
         onClick={handlePrev} 
         disabled={startIndex === 0} 
-        className="p-2 bg-je-black hover:bg-je-red disabled:bg-je-black rounded-full mr-4"
+        className="p-2 bg-je-black hover:bg-je-black disabled:bg-gray-200 rounded-full mr-4"
       >
         ←
       </button>
-      <div className="podcasts-row flex space-x-8">
-        {podcasts.slice(startIndex, startIndex + itemsToShow).map((podcast, index) => (
-            <PodcastPreview 
+      <div className="row flex space-x-8">
+        {items.slice(startIndex, startIndex + itemsToShow).map((item, index) => (
+          isAnalysis ? (
+            <AnalysisPreview 
               key={index} 
-              name={podcast.name} 
-              url={podcast.url} 
+              name={item.name} 
+              url={item.url} 
+              description={item.description}
+              date={item.date}
               className="flex-shrink-0"
             />
+          ) : (
+            <PodcastPreview 
+              key={index} 
+              name={item.name} 
+              url={item.url} 
+              className="flex-shrink-0"
+            />
+          )
         ))}
       </div>
       <button 
         onClick={handleNext} 
-        disabled={startIndex >= podcasts.length - itemsToShow} 
-        className="p-2  bg-je-black hover:bg-je-red disabled:bg-gray-200 rounded-full ml-4"
+        disabled={startIndex >= items.length - itemsToShow} 
+        className="p-2 bg-je-black hover:bg-je-black disabled:bg-gray-200 rounded-full ml-4"
       >
         →
       </button>
@@ -62,7 +76,14 @@ const Slider = ({ podcasts }) => {
 }
 
 Slider.propTypes = {
-    podcasts: PropTypes.array,
+  items: PropTypes.array,
+  isAnalysis: PropTypes.bool,
 };
+
+Slider.defaultProps = {
+  items: [],
+  isAnalysis: false,
+};
+
 
 export default Slider;
