@@ -13,7 +13,7 @@ const PostList = ({ post }) => {
             {post.category === 'Articulos' && <BsPenFill className="text-je-white h-4 w-4  md:h-4 " aria-hidden="true" />}
             {post.category === 'Noticias' && <GiHiveMind className="text-je-white h-4 w-4 md:h-4" aria-hidden="true" />}
             <a href={post.url}  style={{ fontFamily: 'Syne' }} className="text-je-white text-center text-xl md:text-2xl">{post.title}</a>
-            <BsFillArrowRightCircleFill className="text-je-white h-4 w-4 left-8 md:h-4 md:left-20 md:w-4 relative top-4 md:top-16" aria-hidden="true" />
+            <BsFillArrowRightCircleFill className="text-je-white h-6 w-6 left-8 md:h-8 md:left-20 md:w-8 relative top-4 md:top-12" aria-hidden="true" />
         </div>
     )
 }

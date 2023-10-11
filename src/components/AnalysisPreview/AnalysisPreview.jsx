@@ -12,7 +12,7 @@ const AnalysisPreview = ({ name, url, description, date }) => {
           <span className="text-l md:text-xl text-je-black mb-4  text-left" style={{ fontFamily: 'Syne' }}>{date}</span>
         </div>
         <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-        <BsFillArrowRightCircleFill className="text-je-red h-4 w-4 md:h-6 md:w-6 md:ml-auto" aria-hidden="true" />
+        <BsFillArrowRightCircleFill className="text-je-red h-6 w-6 md:h-8 md:w-8 ml-auto" aria-hidden="true" />
         </a>
       </div>
     );
