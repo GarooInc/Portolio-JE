@@ -91,12 +91,26 @@ const NavBar = () => {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="https://wa.link/p8bspz"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Contact
-                  </a>
+                <div className="flex gap-x-4 flex-row items-center justify-center lg:flex-1 lg:gap-x-6">
+                    <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
+                        <BsInstagram className="h-6 w-6 text-je-black" aria-hidden="true" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/jose-echeverria-0171b65a/" target="_blank" rel="noreferrer" className="text-white">
+                        <BsLinkedin className="h-6 w-6 text-je-black" aria-hidden="true" />
+                    </a>
+                    <a href="https://twitter.com/joseecheve" target="_blank" rel="noreferrer" className="text-white">
+                        <BsTwitter className="h-6 w-6 text-je-black" aria-hidden="true" />
+                    </a>
+                    <a href="https://www.tiktok.com/@jose.echeve" target="_blank" rel="noreferrer" className="text-white">
+                        <BsTiktok className="h-6 w-6 text-je-black" aria-hidden="true" />
+                    </a>
+                    <a href="https://www.youtube.com/@CivitasPodcast" target="_blank" rel="noreferrer" className="text-white">
+                        <BsYoutube className="h-6 w-6 text-je-black" aria-hidden="true" />
+                    </a>
+                    <a href="https://open.spotify.com/show/7Mry4XjWu3FjemmeYS2TlL?si=2ebd6daf370149df" target="_blank" rel="noreferrer" className="text-white">
+                        <BsSpotify className="h-6 w-6 text-je-black" aria-hidden="true" />
+                    </a>
+                </div>
                 </div>
               </div>
             </div>
