@@ -58,7 +58,8 @@ const Slider = ({ items, isAnalysis }) => {
             <PodcastPreview 
               key={index} 
               name={item.name} 
-              url={item.url} 
+              urlSpotify={item.urlSpotify}
+              urlYoutube={item.urlYoutube}
               className="flex-shrink-0"
             />
           )
