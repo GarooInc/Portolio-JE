@@ -21,7 +21,7 @@ const PodcastPreview = ({ name, urlSpotify, urlYoutube }) => {
         <img src="/images/podcasticon.svg" alt={name} className="mx-auto mb-4 w-32 h-32 object-cover rounded-full"/>
         <h3 className="text-xl font-bold mb-2">{name}</h3>
         <div 
-            onMouseDown={() => setIsHovered(!isHovered)}
+            onMouseDown={() => setIsHovered(true)}
             className="relative inline-block"
         >
             <a className="text-blue-500 hover:none cursor-pointer" style={{ fontFamily: 'Syne' }}>{t('podcast.listen')}</a>
