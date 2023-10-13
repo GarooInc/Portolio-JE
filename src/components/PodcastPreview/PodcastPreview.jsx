@@ -24,7 +24,7 @@ const PodcastPreview = ({ name, urlSpotify, urlYoutube }) => {
             onMouseDown={() => setIsHovered(!isHovered)}
             className="relative inline-block"
         >
-            <a className="text-blue-500 hover:none cursor-pointer" style={{ fontFamily: 'Syne' }}>{i18n.t('podcast.listen')}</a>
+            <a className="text-blue-500 hover:none cursor-pointer" style={{ fontFamily: 'Syne' }}>{t('podcast.listen')}</a>
             {isHovered && (
                 <div className="absolute flex gap-4 left-1/2 transform -translate-x-1/2 mt-2 p-2 bg-white rounded shadow-lg">
                     <BsSpotify className="text-green-600 cursor-pointer" size={24} onClick={handleSpotifyClick} />
