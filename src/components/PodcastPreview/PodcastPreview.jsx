@@ -18,7 +18,7 @@ const PodcastPreview = ({ name, urlSpotify, urlYoutube }) => {
 
     return (
       <div className="podcast bg-je-black p-8 rounded-lg shadow-lg text-center">
-        <img src="/images/podcasticon.svg" alt={name} className="mx-auto mb-4 w-32 h-32 object-cover rounded-full"/>
+        <img src="/images/podcasticon.svg" alt={name} className="mx-auto mb-4 w-32 h-32 sm:h-28 sm:rounded object-cover rounded-full"/>
         <h3 className="text-xl font-bold mb-2">{name}</h3>
         <div 
             onMouseDown={() => setIsHovered(true)}

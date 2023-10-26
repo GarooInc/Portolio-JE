@@ -11,7 +11,7 @@ const Slider = ({ items, isAnalysis }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 640) {
+      if (window.innerWidth < 760) {
         setItemsToShow(1);
       } else {
         setItemsToShow(4);

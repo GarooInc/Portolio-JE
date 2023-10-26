@@ -44,7 +44,7 @@ const NavBar = () => {
               </Link>
             ))}
           </div>
-          <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
+          <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6 md:gap-x-4">
               <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
                   <BsInstagram className="h-6 w-6" aria-hidden="true" />
               </a>

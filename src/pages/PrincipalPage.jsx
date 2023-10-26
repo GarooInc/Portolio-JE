@@ -32,16 +32,16 @@ const PrincipalPage = () => {
     return (
         <div className='principalPage'>
             <NavBar/>
-            <section id='/' className="bg-je-blue w-full h-screen pt-12 md:pt-20 rounded-b-6xl flex items-center justify-center">
+            <section id='/' className="bg-je-blue w-full pt-12 md:pt-20 rounded-b-6xl flex items-center justify-center">
                 <div className="w-full max-w-screen-xl mx-4 md:mx-auto flex flex-col md:flex-row md:gap-8 rounded-6xl p-4 md:p-8">
-                    <img src="/images/profilepic.jpg" alt="Logo" className="mt-8 w-full md:mt-0 md:w-1/2 h-full md:h-auto object-cover rounded-6xl box"/>
+                    <img src="/images/profilepic.jpg" alt="Logo" className=" mt-8 w-full md:mt-0 md:w-1/2 h-full md:h-auto object-cover rounded-6xl box"/>
                     <div className="flex flex-col justify-center w-full md:w-1/2">
                         <Title text="JOSE ECHEVERRÍA" color="text-white" textAlign="text-right" />
-                        <span className="pb-4 text-l md:text-2xl text-white text-right" style={{ fontFamily: 'Syne' }}>{t('intro.description')}</span>
+                        <span className="pb-4 text-xs md:text-2xl text-white text-right" style={{ fontFamily: 'Syne' }}>{t('intro.description')}</span>
                     </div>
                 </div>
             </section>
-            <section id='/podcast' className="bg-je-blue w-full h-screen pt-12 md:pt-20 rounded-6xl flex flex-col justify-start items-center">
+            <section id='/podcast' className="bg-je-blue w-full pt-12 md:pt-20 rounded-6xl flex flex-col justify-start items-center">
                 <div className="md:h-1/2 bg-je-white max-w-screen-xl mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-center items-center">
                     <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
                         <h1 className="text-4xl md:text-2xl text-je-black text-left my-4" style={{ fontFamily: 'Syne' }}>{t('podcast.title')}</h1>
