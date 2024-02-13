@@ -14,7 +14,7 @@ const Slider = ({ items, isAnalysis }) => {
       if (window.innerWidth < 760) {
         setItemsToShow(1);
       } else {
-        setItemsToShow(4);
+        setItemsToShow(2);
       }
     };
     
@@ -35,7 +35,7 @@ const Slider = ({ items, isAnalysis }) => {
   };
 
   return (
-    <div className="slider flex pt-4 items-center md:pt-8">
+    <div className="slider flex p-6 items-center md:p-8">
       <button 
         onClick={handlePrev} 
         disabled={startIndex === 0} 
@@ -58,6 +58,7 @@ const Slider = ({ items, isAnalysis }) => {
             <PodcastPreview 
               key={index} 
               name={item.name} 
+              embeed={item.embeed}
               urlSpotify={item.urlSpotify}
               urlYoutube={item.urlYoutube}
               className="flex-shrink-0"

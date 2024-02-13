@@ -3,8 +3,9 @@ import PropTypes from "prop-types"
 import { BsSpotify, BsYoutube } from 'react-icons/bs'
 import i18n from "../../../i18n"
 import { useTranslation } from 'react-i18next'
+import IframeEmbeed from "../IframeEmbeed/IframeEmbeed"
 
-const PodcastPreview = ({ name, urlSpotify, urlYoutube }) => {
+const PodcastPreview = ({ name, urlSpotify, urlYoutube, embeed }) => {
     const { t } = useTranslation()
     const [isHovered, setIsHovered] = useState(false);
 
@@ -17,9 +18,9 @@ const PodcastPreview = ({ name, urlSpotify, urlYoutube }) => {
     };
 
     return (
-      <div className="podcast bg-je-black p-8 rounded-lg shadow-lg text-center">
-        <img src="/images/podcasticon.svg" alt={name} className="mx-auto mb-4 w-32 h-32 sm:h-28 sm:rounded object-cover rounded-full"/>
-        <h3 className="text-xl font-bold mb-2">{name}</h3>
+      <div className="p-4 bg-je-black p-2 lg:p-8 rounded-lg shadow-lg text-center">
+        <IframeEmbeed src={embeed} />
+        <h3 className="text-xl font-bold m-2">{name}</h3>
         <div 
             onMouseDown={() => setIsHovered(true)}
             className="relative inline-block"
