@@ -17,8 +17,8 @@ const SubstackWidget = () => {
         };
 
         window.SubstackFeedWidget = {
-            substackUrl: "kojimena.substack.com",
-            posts: 3,
+            substackUrl: "prostack.substack.com",
+            posts: 4,
         };
     
         // Create a new script element
