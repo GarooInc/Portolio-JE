@@ -26,87 +26,60 @@ const resources = {
             }
         ]
     },
-    "Prensa": {
-        "title": "Prensa",
-        "category": "Prensa",
+    "Entrevistas": {
+        "title": "Entrevistas",
+        "category": "Entrevistas",
         "icon": "prensa.png",
         "posts": [
             {
-                "title": "Post 1 en Prensa",
-                "category": "Prensa",
+                "title": "Post 1 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 2 en Prensa",
-                "category": "Prensa",
+                "title": "Post 2 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 3 en Prensa",
-                "category": "Prensa",
+                "title": "Post 3 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 4 en Prensa",
-                "category": "Prensa",
+                "title": "Post 4 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             }
                 
         ]
     },
-    "Noticias": {
-        "title": "Noticias",
-        "category": "Noticias",
+    "Artículos de Opinión": {
+        "title": "Artículos de Opinión",
+        "category": "Artículos de Opinión",
         "icon": "noticias.png",
         "posts": [
             {
-                "title": "Post 1 en Noticias",
-                "category": "Noticias",
+                "title": "Post 1 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 2 en Noticias",
-                "category": "Noticias",
+                "title": "Post 2 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 3 en Noticias",
-                "category": "Noticias",
+                "title": "Post 3 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 4 en Noticias",
-                "category": "Noticias",
+                "title": "Post 4 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             }
         
-        ]
-    },
-    "Artículos": {
-        "title": "Articulos",
-        "category": "Articulos",
-        "icon": "articulos.png",
-        "posts": [
-            {
-                "title": "Post 1 en Articulos",
-                "category": "Articulos",
-                "url": "https://www.google.com",
-            },
-            {
-                "title": "Post 2 en Articulos",
-                "category": "Articulos",
-                "url": "https://www.google.com",
-            },
-            {
-                "title": "Post 3 en Articulos",
-                "category": "Articulos",
-                "url": "https://www.google.com",
-            },
-            {
-                "title": "Post 4 en Articulos",
-                "category": "Articulos",
-                "url": "https://www.google.com",
-            }
         ]
     },
     "All": {
@@ -136,87 +109,60 @@ const resources = {
             }
         ]
     },
-    "Press": {
-        "title": "Prensa",
-        "category": "Prensa",
+    "Interviews": {
+        "title": "Entrevistas",
+        "category": "Entrevistas",
         "icon": "prensa.png",
         "posts": [
             {
-                "title": "Post 1 en Prensa",
-                "category": "Press",
+                "title": "Post 1 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 2 en Prensa",
-                "category": "Press",
+                "title": "Post 2 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 3 en Prensa",
-                "category": "Press",
+                "title": "Post 3 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 4 en Prensa",
-                "category": "Press",
+                "title": "Post 4 en Entrevistas",
+                "category": "Entrevistas",
                 "url": "https://www.google.com",
             }
                 
         ]
     },
-    "News": {
-        "title": "Noticias",
-        "category": "Noticias",
+    "Opinion articles": {
+        "title": "Artículos de Opinión",
+        "category": "Artículos de Opinión",
         "icon": "noticias.png",
         "posts": [
             {
-                "title": "Post 1 en Noticias",
-                "category": "News",
+                "title": "Post 1 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 2 en Noticias",
-                "category": "News",
+                "title": "Post 2 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 3 en Noticias",
-                "category": "News",
+                "title": "Post 3 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             },
             {
-                "title": "Post 4 en Noticias",
-                "category": "News",
+                "title": "Post 4 en Artículos de Opinión",
+                "category": "Artículos de Opinión",
                 "url": "https://www.google.com",
             }
         
-        ]
-    },
-    "Articles": {
-        "title": "Articulos",
-        "category": "Articulos",
-        "icon": "articulos.png",
-        "posts": [
-            {
-                "title": "Post 1 en Articulos",
-                "category": "Articles",
-                "url": "https://www.google.com",
-            },
-            {
-                "title": "Post 2 en Articulos",
-                "category": "Articles",
-                "url": "https://www.google.com",
-            },
-            {
-                "title": "Post 3 en Articulos",
-                "category": "Articles",
-                "url": "https://www.google.com",
-            },
-            {
-                "title": "Post 4 en Articulos",
-                "category": "Articles",
-                "url": "https://www.google.com",
-            }
         ]
     }
 }

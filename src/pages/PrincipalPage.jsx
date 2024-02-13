@@ -12,8 +12,10 @@ import resources from "../../resources"
 import PostList from '../components/PostList/PostList'
 import Form from '../components/Form/Form'
 import Footer from '../components/Footer/Footer'
-import IframeEmbeed from '../components/IframeEmbeed/IframeEmbeed'
 import analysis from '../../analysis'
+import { InstagramEmbed } from 'react-social-media-embed'
+import SubstackWidget from '../components/SubstackWidget/SubstackWidget'
+
 
 
 const PrincipalPage = () => {
@@ -79,7 +81,7 @@ const PrincipalPage = () => {
             </section>
             <section id='/analisis' className="bg-je-red w-full pt-12 md:pt-20 roundedt-6xl flex flex-col justify-start items-center">
                 <Title text={t('analysis.title')} color="text-white" textAlign="text-center" />
-                <Slider items={analysis} isAnalysis/>
+                <SubstackWidget/>
             </section>
             <section id='/contacto' className="bg-je-red w-full  bg-je-blue w-full pt-20 ">
                 <div className="h-3/4 bg-je-white mx-4 md:mx-4 flex flex-col md:flex-row gap-6 md:gap-8 rounded-6xl p-2 md:p-8 overflow-hidden justify-around items-center">
@@ -94,27 +96,33 @@ const PrincipalPage = () => {
                     </div>
                 </div>
                 <div className="p-8 md:mx-4 flex flex-col md:flex-row gap-2 md:gap-6 rounded-6xl  overflow-hidden justify-center">
-                    <Title text={t('contact.media')} color="text-je-white" textAlign="text-center" />
-                    <div className="justify-evenly items-evenly flex flex-row lg:flex lg:items-center lg:justify-end lg:flex-1 lg:gap-x-6">
-                        <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
-                            <BsInstagram className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/jose-echeverria-0171b65a/" target="_blank" rel="noreferrer" className="text-white">
-                            <BsLinkedin className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
-                        </a>
-                        <a href="https://twitter.com/joseecheve" target="_blank" rel="noreferrer" className="text-white">
-                            <BsTwitter className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
-                        </a>
-                        <a href="https://www.tiktok.com/@jose.echeve" target="_blank" rel="noreferrer" className="text-white">
-                            <BsTiktok className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
-                        </a>
-                        <a href="https://www.youtube.com/@CivitasPodcast" target="_blank" rel="noreferrer" className="text-white">
-                            <BsYoutube className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
-                        </a>
-                        <a href="https://open.spotify.com/show/7Mry4XjWu3FjemmeYS2TlL?si=2ebd6daf370149df" target="_blank" rel="noreferrer" className="text-white">
-                            <BsSpotify className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
-                        </a>
+                    <div className='flex flex-col'>
+                        <Title text={t('contact.media')} color="text-je-white" textAlign="text-center" />
+                        <div className="justify-evenly items-evenly flex flex-row lg:flex lg:items-center lg:gap-x-6">
+                            <a href="https://www.instagram.com/jose_echeve/" target="_blank" rel="noreferrer" className="text-white">
+                                <BsInstagram className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/jose-echeverria-0171b65a/" target="_blank" rel="noreferrer" className="text-white">
+                                <BsLinkedin className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
+                            </a>
+                            <a href="https://twitter.com/joseecheve" target="_blank" rel="noreferrer" className="text-white">
+                                <BsTwitter className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
+                            </a>
+                            <a href="https://www.tiktok.com/@jose.echeve" target="_blank" rel="noreferrer" className="text-white">
+                                <BsTiktok className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
+                            </a>
+                            <a href="https://www.youtube.com/@CivitasPodcast" target="_blank" rel="noreferrer" className="text-white">
+                                <BsYoutube className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
+                            </a>
+                            <a href="https://open.spotify.com/show/7Mry4XjWu3FjemmeYS2TlL?si=2ebd6daf370149df" target="_blank" rel="noreferrer" className="text-white">
+                                <BsSpotify className="h-6 w-6 md:h-8 md:w-8 shake" aria-hidden="true" />
+                            </a>
+                        </div>
+                        <div className="p-8">
+                            <InstagramEmbed url="https://www.instagram.com/jose_echeve?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" />
+                        </div>
                     </div>
+
                 </div>
             </section>
             <section id='footer' className="flex-shrink-0 bg-je-black h-100">
