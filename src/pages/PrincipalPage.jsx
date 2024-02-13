@@ -12,6 +12,7 @@ import resources from "../../resources"
 import PostList from '../components/PostList/PostList'
 import Form from '../components/Form/Form'
 import Footer from '../components/Footer/Footer'
+import IframeEmbeed from '../components/IframeEmbeed/IframeEmbeed'
 import analysis from '../../analysis'
 
 
@@ -86,6 +87,7 @@ const PrincipalPage = () => {
                         <span className="text-l md:text-2xl text-je-black text-left mt-4" style={{ fontFamily: 'Space Grotesk' }}>{t('contact.subtitle')}</span>
                         <Title text={t('contact.title')} color="text-je-black" textAlign="text-left" />
                         <span className="text-l md:text-2xl text-je-black text-left" style={{ fontFamily: 'Space Grotesk' }}>{t('contact.collaborate')}</span>
+                        <span className="text-md md:text-l text-je-black text-left py-2" style={{ fontFamily: 'Space Grotesk' }}>{t('contact.sponsor')}</span>
                     </div>
                     <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
                         <Form/>
